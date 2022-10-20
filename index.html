@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">About us</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">What would be most effective?</button>
+</div>
+
+<div id="London" class="tabcontent">
+ <div id="KuyaTami">
+ <img src="KuyaTami.png">
+ </div>
+  <div id="Londontext">
+   <h1>The Situation of Sitio Bebe</h1>
+    <p>Sitio Bebe is a town where there is a shortage of drinking water, because the town is not near<br>
+     any natural sources of water. Even though balon’s or water are open, this still makes drinkable water<br>
+     scarce, and that they have to boil the water before drinking it.</p>
+
+     <img src="data.png">
+
+     <p>Based on the table, the percentage of cases in Sitio Bebe of (acute respiratory infection(59%),<br> 
+     acute lower respiratory tract infection(6%), and hypertension(5.5%)), are higher than the cases<br> 
+     of Central Luzon which even has a larger population than Sitio Bebe, cases of common diseases<br> 
+     of Sitio Bebe in Central Luzon: acute respiratory infection(48.%), acute lower respiratory tract<br> 
+     infection(6% ), and hypertension(5.5%). One of the reasons for having common diseases in Sitio<br> 
+     Bebe is that usually work in the town is mining or factory work. In mining, the diseases can be<br>
+     caused by the coal or other 'ores' that they inhale that harms their respiratory system, it can<br>
+     also be the factory because of the smoke it emits from the engine, and that you are in an <br>
+     enclosed area or building. And if a person gets one of the diseases, the process of consulting<br>
+     with a doctor would be slow, sure there are training centers but there aren’t even colleges that<br> 
+     would have health professional courses, even the colleges are from other cities, this would lead<br>
+     to short staff in hospitals or clinics</p>
+ </div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <div id="topbanner">
+  <h1>Our Solution</h1>
+  <p>Our Group decided to create a fundraising concert to gain money to help the residents of Sitio Bebe, and informed
+     our audience via facebook, or youtube through an educational video.</p></div>
+
+ <h3>Who are the people that we need?</h3>
+ <div id="TargetAudience">
+  <div id="SchoolHeads"><p>School heads<br>
+  25% of the profited funds from the concert would fund colleges that will support health professional courses.
+  </p></div>
+
+  <div id="Residents"><p>The Residents of Sitio Bebe<br>
+  So that they can be aware of the diseases that they could acquire, 50% of the profit would go to the barangay to assist them, and
+  25% of the profit would go to clean water providers so that they wouldn’t need to boil the water from water pumps.
+  </p></div>
+
+  <div id="Youths"><p>The Youths<br>
+  The concert would help letting other people know especially the young generation the situation of Sitio Bebe.
+  </p></div><br><br>
+ </div>
+</div>
+
+<div class="blackbar">
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
